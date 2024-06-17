@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Mason plugins
 
@@ -11,6 +11,7 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
+        "pyright",
         -- add more arguments for adding more language servers
       },
     },
