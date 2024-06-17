@@ -9,5 +9,6 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.project.nvim-spectre" }, -- powerful search/replace
+  { import = "astrocommunity.editing-support.neogen" }, -- annotation generator (for classes, functions, etc.)
   -- import/override with your plugins folder
 }
