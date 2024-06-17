@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.project.nvim-spectre" }, -- powerful search/replace
   { import = "astrocommunity.editing-support.neogen" }, -- annotation generator (for classes, functions, etc.)
+  { import = "astrocommunity.motion.flash-nvim" }, -- powerful plugin for jumping inside a file
   -- import/override with your plugins folder
 }
