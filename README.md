@@ -1,3 +1,8 @@
+# What is it?
+
+This is my personal Neovim configuration based on the official starter template of the fantastic AstroNvim distribution.
+Below are the steps to start your own customization. You can also clone me repo if like, just be sure to have a backup ;-)
+
 # AstroNvim Template
 
 **NOTE:** This is for AstroNvim v4+
