@@ -38,6 +38,7 @@ return {
         additional_toggles = {
           Yes = "No",
           On = "Off",
+          on = "off",
           ["0"] = "1",
           Enable = "Disable",
           Enabled = "Disabled",
