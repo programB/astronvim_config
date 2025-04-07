@@ -85,4 +85,21 @@ return {
       )
     end,
   },
+  {
+    -- move git symbols and icons to the left side of the gutter
+    "rebelot/heirline.nvim",
+    optional = true,
+    opts = function(_, opts)
+      local status = require "astroui.status"
+      -- opts.statusline = nil -- no, do not hide statusline
+      -- opts.statuscolumn = vim.fn.has "nvim-0.9" == 1
+      opts.statuscolumn = vim.fn.has "nvim-0.9" == 1
+          and {
+            status.component.foldcolumn(),
+            status.component.signcolumn(),
+            status.component.numbercolumn(),
+          }
+        or nil
+    end,
+  },
 }
