@@ -8,5 +8,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.search.nvim-spectre" }, -- powerful search/replace
   -- import/override with your plugins folder
 }
