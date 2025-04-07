@@ -16,6 +16,48 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
 
+  {
+    -- Plugin for fast toggling booleans and other 2-state values
+    -- (added to search/replace menu created by the Spectre plugin)
+    -- (shortcut <Leader>sb)
+    "gerazov/toggle-bool.nvim",
+
+    dependencies = {
+      {
+        "AstroNvim/astrocore",
+        opts = function(_, opts)
+          local maps = opts.mappings
+          local prefix = "<Leader>s"
+          maps.n[prefix .. "b"] = { function() require("toggle-bool").toggle_bool() end, desc = "Toggle boolean" }
+        end,
+      },
+    },
+
+    config = function()
+      require("toggle-bool").setup {
+        -- The toggles included by default are:
+        -- False ←→ True
+        -- false ←→ true
+        additional_toggles = {
+          Yes = "No",
+          On = "Off",
+          on = "off",
+          ["0"] = "1",
+          Enable = "Disable",
+          Enabled = "Disabled",
+          First = "Last",
+          Before = "After",
+          Persistent = "Ephemeral",
+          Internal = "External",
+          Ingress = "Egress",
+          Allow = "Deny",
+          All = "None",
+          any = "all",
+        },
+      }
+    end,
+  },
+
   -- == Examples of Overriding Plugins ==
 
   -- customize dashboard options
