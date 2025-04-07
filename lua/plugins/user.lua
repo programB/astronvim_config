@@ -102,4 +102,16 @@ return {
         or nil
     end,
   },
+  {
+    -- show git status in the gutter for new files (not yet tracked in git repo)
+    "lewis6991/gitsigns.nvim",
+    -- (extend/amend opts table for this plugin)
+    opts = {
+      attach_to_untracked = true,
+      signs = {
+        -- use a distinct sign for untracked lines
+        untracked = { text = "┆" },
+      },
+    },
+  },
 }
