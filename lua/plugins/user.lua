@@ -114,4 +114,14 @@ return {
       },
     },
   },
+  {
+    -- set code annotation style for python
+    "danymat/neogen",
+    opts = function(_, opts)
+      -- do not override the opts languages table - extend it
+      return require("astrocore").extend_tbl(opts, {
+        languages = { python = { template = { annotation_convention = "reST" } } }, -- "google_docstrings","numpydoc", "reST"
+      })
+    end,
+  },
 }
