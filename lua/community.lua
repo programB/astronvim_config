@@ -11,5 +11,6 @@ return {
   { import = "astrocommunity.search.nvim-spectre" }, -- powerful search/replace
   { import = "astrocommunity.editing-support.neogen" }, -- annotation generator (for classes, functions, etc.)
   { import = "astrocommunity.motion.flash-nvim" }, -- powerful plugin for jumping inside a file
+  { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" }, -- colorful delimiters
   -- import/override with your plugins folder
 }
