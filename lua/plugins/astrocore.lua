@@ -63,6 +63,10 @@ return {
         ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
+        -- the same with vim motions (<shift>-l, <shift>-h)
+        L = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
+        H = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
